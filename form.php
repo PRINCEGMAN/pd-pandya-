@@ -3,8 +3,8 @@
     if(isset($_POST['name']))
     {
     $server = "localhost";
-    $username = "root";
-    $password = "";
+    $username = "prince";
+    $password = "0y42nrQ@";
 
     $con = mysqli_connect($server, $username, $password);
     if(!$con)
@@ -18,7 +18,7 @@
     $pn = $_POST['tel'];
     $desc = $_POST['Description'];
     // echo $desr;
-    $sql = "INSERT INTO `prince`.`form` (`name`, `age`, `gender`, `email`, `phone number`,`description`) VALUES ('$name', '$age', '$gender', '$email', '$pn', '$desc')";
+    $sql = "INSERT INTO `princedb`.`form` (`name`, `age`, `gender`, `email`, `phone number`,`description`) VALUES ('$name', '$age', '$gender', '$email', '$pn', '$desc')";
         // echo "success to connect db";
     if($con->query($sql) == TRUE)
     {
